@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 
-import {createStore,applyMiddleware} from 'Redux';
+import {createStore,applyMiddleware} from 'redux';
 import thunk from 'redux-trunk';
 import { Provider } from 'react-redux';
 import reducers from './reducers';
-import {fetchbar } from '.action';
+import { fetchBear } from './actions';
 
 
 const  createStorewithMiddleware = applyMiddleware(thunk)(createStore);

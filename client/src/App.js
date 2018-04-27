@@ -37,7 +37,7 @@ class App extends Component {
 let mapStateToProps = (state) => (
   {bear: state.bear}
 )
-export default connect(mapStateToProps, {
+export default App(mapStateToProps, {
   deleteBear,
   createBear,
-})(App);
+})
